@@ -29,7 +29,7 @@ class LayoutBasic1 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Study Flu",
+                          "Study Flutter",
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
