@@ -21,7 +21,7 @@ class LayoutBasic4 extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  "Vel et voluptatibus.",
+                  "Enhance your skills",
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -71,8 +71,8 @@ class LayoutBasic4 extends StatelessWidget {
                     ),
                     SizedBox(height: 5),
                     Text(
-                      "Iure est quibusdam rem fugiat modi\n"
-                      "et magnam hic suscipit.",
+                      "Unlock your potential with\n"
+                      "expert training",
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
@@ -116,19 +116,37 @@ class LayoutBasic4 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Container(
-              height: 80,
-              width: 400,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      colors: [Colors.white, Colors.amber],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter),
-                  borderRadius: BorderRadius.circular(16.0)),
+            Text(
+              "Popular Courses",
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black54),
+            ),
+            SizedBox(height: 10),
+            SizedBox(
+              height: 70,
+              child: ListView.builder(
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 70,
+                    margin: EdgeInsets.only(right: 16.0),
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                            colors: [Colors.white70, Colors.amber],
+                            begin: Alignment.topCenter,
+                            end: Alignment.center),
+                        borderRadius: BorderRadius.circular(16.0)),
+                  );
+                },
+              ),
             ),
             SizedBox(height: 20),
             Text(
-              "Quia voluptatum culpa.",
+              "Explore More",
               style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -170,7 +188,7 @@ class LayoutBasic4 extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "View Product $index.",
+                          "View Course $index",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 18,
