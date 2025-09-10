@@ -23,7 +23,7 @@ Before running the project, ensure you have the following installed:
 #### 1️⃣ Clone the project from GitHub  
 ```sh
 git clone (https://github.com/minhvh5504/layout_basic.git)
-cd notepad_flutter
+cd layout_basic
 ```
 
 ### 2️⃣ Install dependencies
